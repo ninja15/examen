@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<!--<table>-->
+    <!--<tr>-->
+    <!--<td width="300px" style="border: 0px">-->
+        <!--{% for user in all_users %}-->
+        <!--<td>-->
+            <!--{{ user.first_name }} <br />-->
+        <!--</td>-->
+        <!--<td>-->
+            <!--{{ user.last_name}} <br/>-->
+        <!--</td>-->
+        <!--{% endfor %}-->
+    <!--</td>-->
+    <!--&lt;!&ndash;<td>&ndash;&gt;-->
+        <!--&lt;!&ndash;{% for product in products %}&ndash;&gt;-->
+            <!--&lt;!&ndash;{{product.name}} </br>&ndash;&gt;-->
+        <!--&lt;!&ndash;{% endfor %}&ndash;&gt;-->
+    <!--&lt;!&ndash;</td>&ndash;&gt;-->
+    <!--</tr>-->
+<!--</table>-->
+
+<table style="width:300px">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Logins</th>
+  </tr>
+
+      {% for user in all_users %}
+    <tr><td>{{ user.first_name }}</td><td>{{ user.last_name}}</td><td> {{user.number_of_login}}</td></tr>
+      {% endfor %}
+
+
+</table>
+
+<br />
+<br />
+
+</body>
+</html>
